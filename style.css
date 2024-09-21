@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color:#E7FBE6; */
+    
+}
+
+.container{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    /* padding: 1vw;  */
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;  /* hid the horizontal and vertical scroll bar */
+}
+
+.header{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    width: 100vw;
+    height: 10vh;
+    font-size: 2.2vw;
+    text-align: center;
+    overflow: hidden;
+    background-color: #CBE2B5;
+    position: relative;
+    left: 5vw;
+    color: #201E43;
+    font-weight: bold;
+    
+}
+
+.country-list{
+    /* border: 1px solid black; */
+    width: 100vw;
+    height: 40vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   /* Equal space between elements of parent box */
+    position: relative;       
+
+}
+
+.country1{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    width: 12vw;
+    height: 40vh;
+    /* padding: 5px; */
+    position: absolute;         /* change postion w.r.t to the reltive parent element */
+    left: 23vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.country1 label{
+    position: relative;
+    /* left: 8vw; */
+    font-size: 1.5vw;
+    font-family: cursive;
+}
+
+input[name="input1"]{
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: relative;
+    height: 6vh;
+    width: 12vw ;
+    /* left: 8vw; */
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #D1E9F6;
+    
+}
+
+.flag1{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    position: relative;
+    height: 20vh;
+    width: 12vw ;
+    /* left: 8vw; */
+    
+}
+
+
+
+.country2{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    /* padding: 5px; */
+    width: 12vw;
+    height: 40vh;
+    position: absolute;     /* change postion w.r.t to the reltive parent element */
+    right: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.country2 label{
+    position: relative;
+    font-size: 1.5vw;
+    /* left: 8vw; */
+    font-family: cursive;
+}
+
+input[name="input2"]{
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: relative;
+    height: 6vh;
+    width: 12vw ;
+    /* left: 8vw; */
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #D1E9F6;
+
+}
+
+.flag2{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    position: relative;
+    height: 20vh;
+    width: 12vw ;
+    /* left: 8vw; */
+}
+
+
+.currency-data{
+    /* border: 1px solid black; */
+    width: 100vw;
+    height: 20vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   /* Equal space between elements of parent box */
+    position: relative;
+
+}
+
+.country1-currency{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    height: 20vh;
+    width: 20vw;
+    position: absolute;     /* change postion w.r.t to the reltive parent element */
+    left: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.country1-currency label{
+    position: relative;
+    left: 5vw;
+    top: 2vh;
+    font-size: 1.5vw;
+    font-family: cursive;
+
+}
+
+.currency-input1{
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: relative;
+    height: 10vh;
+    width: 15vw;
+    order: 3;
+    left: 5vw;
+    border-radius: 1px;
+    text-align: right;
+    padding-right: 0.3vw;
+    padding-top: 5vh;
+    font-size: 1.5vw;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #D1E9F6;
+    
+    
+}
+
+.currency-symbol1{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    position: absolute;
+    height: 10vh;
+    width: 4vw;
+    left: 1vw;
+    bottom: 2.6vh;
+    padding-top: 2vw;
+    padding-left: 1vw;
+    font-size: 2vw;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.country2-currency{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    height: 20vh;
+    width: 20vw;
+    position: absolute;     /* change postion w.r.t to the reltive parent element */
+    right: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.country2-currency label{
+    position: relative;
+    left: 5vw;
+    top: 2vh;
+    font-size: 1.5vw;
+    font-family: cursive;
+
+}
+
+.currency-input2{
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: relative;
+    height: 10vh;
+    width: 15vw;
+    order: 3;
+    left: 5vw;
+    border-radius: 1px;
+    text-align: right;
+    padding-right: 0.3vw;
+    padding-top: 5vh;
+    font-size: 1.5vw;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #D1E9F6;
+    
+    
+}
+
+.currency-symbol2{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    position: absolute;
+    height: 10vh;
+    width: 4vw;
+    left: 1vw;
+    bottom: 2.6vh;
+    padding-left: 1vw; 
+    padding-top: 2vw;
+    font-size: 2vw;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.arrow-symbol{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    height: 20vh;
+    width: 10vw;
+    position: absolute;     /* change postion w.r.t to the reltive parent element */
+    left: 45.5vw;
+    font-size: 5vw;
+    font-style: italic;
+    text-align: center;
+    padding-left: 3vw;
+    padding-top: 3vw;
+    
+}
+
+
+.footer{
+    /* border: 1px solid black; */
+    width: 100vw;
+    height: 10vh;
+    box-sizing: border-box;
+    background-color: #CBE2B5;
+    /* text-align: center; */
+    font-size: 1.2vw;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1vw;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+img{
+    box-sizing: border-box;
+    height: 20vh;
+    width: 12vw;
+    padding: 1vh;
+}
+
+
+#graph-box{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    height: 40vh;
+    width: 28vw;
+    position: absolute;
+    left: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#graph1{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    width: 5vw;
+    height: 40vh ;
+}
+
+#graph1-display{
+    box-sizing: border-box;
+    border: 1px solid black;
+    position:absolute;
+    width: 5vw;
+    /* height: 10vh; */
+    bottom: 0;
+    background-color: blue;
+    border-radius: 10%;
+    box-shadow: 0.1vw 0.1vw ;
+    max-height: 30vh;
+    
+}
+
+#graph2{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    position: relative;
+    width: 5vw;
+    height: 40vh ;
+}
+
+#graph2-display{
+    box-sizing: border-box;
+    border: 1px solid black;
+    position:absolute;
+    width: 5vw;
+    /* height: 30vh; */
+    bottom: 0;
+    background-color: blue;
+    border-radius: 10%;
+    box-shadow: 0.1vw 0.1vw ;
+    max-height: 30vh;
+}
+
+
+#small-display{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    width: 12vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+#currency-update{
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 12vw;
+    height: 16vh;
+    max-height: 16vh;
+    font-size: 1.5vw;
+    font-family: cursive;
+    font-weight: bold;
+    border-radius: 6%;
+    background-color: #D1E9F6;
+    padding: 0.5vw;
+}
+
+#refresh{
+    box-sizing: border-box;
+    height: 7vh;
+    width: 7vh;
+    position: absolute;
+    left: 4vw;
+    bottom: 2vh;
+    border-radius: 10%;
+    font-size: 3vw;
+    font-weight: bold;
+    border: none;
+    background-color:#E7FBE6;
+    /* box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw; */
+    /* display: inline-block; */
+}

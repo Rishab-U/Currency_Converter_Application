@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter Application</title>
+	<link rel="icon" type="image/x-icon" href="D:\HTML_Learn\JavaScript_Learn\Chapter-13 Currency Converter Application\reshot-icon-exchanging-money-SVY423JXNM-5cf6d.svg">
+    <link rel="stylesheet" href="D:\HTML_Learn\JavaScript_Learn\Chapter-13 Currency Converter Application\style.css">
+    <link rel="stylesheet" href="D:\HTML_Learn\JavaScript_Learn\Chapter-13 Currency Converter Application\style2.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">Currency Converter</header>
+        <div class="sub-container">
+        <div class="country-list">
+            <div class="country1">
+                <!-- <input type="text" placeholder="select country"> -->
+                 <form action="">
+                    <label for="country1-option">Select Country:</label><br>
+                    <!-- input and datalist use to create drop down with search 
+                     Important attribute: list = "input" and value = "some value" 
+                     input - list attribute value should be same as datalist - id attribute value
+                    -->
+                    <input type="search" list="input1" name="input1" id="country1-option" class="input">
+                    <datalist id="input1">
+                        
+                        <option value="Afghanistan" flag="af" symbol="&#1547;">AFN</option>
+                        <option value="America" flag="us" symbol="&#36">USD</option>
+                        <option value="Argentina" flag="ar" symbol="&#8369;">ARS</option>
+                        <option value="Armenia" flag="am" symbol="&#1423;">AMD</option>
+                        <option value="Australia" flag="au" symbol="&#65;&#36;">AUD</option>
+                        <option value="Azerbaijan" flag="az" symbol="&#8380;">AZN</option>
+                        <option value="Bangladesh" flag="bd" symbol="&#2547">BDT</option>
+                        <option value="Barbados" flag="bb" symbol="&#36;">BBD</option>
+                        <option value="Belarus" flag="by" symbol="&#66;&#114;">BYN</option>
+                        <option value="Bhutan" flag="bt" symbol="&#78;&#117;">BTN</option>
+                        <option value="Brazil" flag="br" symbol="&#82;&#36;">BRL</option>
+                        <option value="Canada" flag="ca" symbol="&#67;&#36;">CAD</option>
+                        <option value="China" flag="cn" symbol="&#165">CNY</option>
+                        <option value="Denmark" flag="dk" symbol="&#107;&#114;">DKK</option>
+                        <option value="Egypt" flag="eg" symbol="&#163;">EGP</option>
+                        <option value="England" flag="gb-eng" symbol="&#163;">GBP</option>
+                        <option value="Europe" flag="eu" symbol="&#8364;">EUR</option>
+                        <option value="Fiji" flag="fj" symbol="&#36;">FJD</option>
+                        <option value="France" flag="fr" symbol="&#8364;">EUR</option>
+                        <option value="Germany" flag="de" symbol="&#8364;">EUR</option>
+                        <option value="Hong Kong" flag="hk" symbol="&#72;&#36;">HKD</option>
+                        <option value="Hungary" flag="hu" symbol="&#70;&#116;">HUF</option>
+                        <option value="Iceland" flag="is" symbol="&#107;&#114;">ISK</option>
+                        <option value="India" flag="in" symbol="&#8377">INR</option>
+                        <option value="Indonesia" flag="id" symbol="&#82;&#112;">IDR</option>
+                        <option value="Iran" flag="ir" symbol="&#65020;">IRR</option>
+                        <option value="Iraq" flag="iq" symbol="&#68;">IQD</option>
+                        <option value="Ireland" flag="ie" symbol="&#8364;">EUR</option>
+                        <option value="Israel" flag="il" symbol="&#8362">ILS</option>
+                        <option value="Italy" flag="it" symbol="&#8356;">EUR</option>
+                        <option value="Jamaica" flag="jm" symbol="&#74;&#36;">JMD</option>
+                        <option value="Japan" flag="jp" symbol="&#165">JPY</option>
+                        <option value="Jordan" flag="jo" symbol="&#74;&#68;">JOD</option>
+                        <option value="Kazakhstan" flag="kz" symbol="&#8376;">KZT</option>
+                        <option value="Kenya" flag="ke" symbol="&#83;&#104;">KES</option>
+                        <option value="Kuwait" flag="kw" symbol="&#107;&#68;">KWD</option>
+                        <option value="Kyrgyzstan" flag="kg" symbol="&#75;">KGS</option>
+                        <option value="Madagascar" flag="mg" symbol="&#65;&#114;">MGA</option>
+                        <option value="Malaysia" flag="my" symbol="&#82;&#77;">MYR</option>
+                        <option value="Maldives" flag="mv" symbol="&#1923;&#46;">MVR</option>
+                        <option value="Mauritius" flag="mu" symbol="&#8360;">MUR</option>
+                        <option value="Mexico" flag="mx" symbol="&#36;">MXN</option>
+                        <option value="Myanmar" flag="mm" symbol="&#75;">MMK</option>
+                        <option value="Nepal" flag="np" symbol="&#2352;&#2370;">NPR</option>
+                        <option value="Netherlands" flag="nl" symbol="&#8364;">EUR</option>
+                        <option value="New Zealand" flag="nz" symbol="&#78;&#36;">NZD</option>
+                        <option value="Nigeria" flag="ng" symbol="&#8358;">NGN</option>
+                        <option value="North Korea" flag="kp" symbol="&#8361;">KPW</option>
+                        <option value="Norway" flag="no" symbol="&#107;&#114;">NOK</option>
+                        <option value="Oman" flag="om" symbol="&#1054;&#82;">OMR</option>
+                        <option value="Pakistan" flag="pk" symbol="&#8360">PKR</option>
+                        <option value="Papua New Guinea" flag="pg" symbol="&#x4B;">PGK</option>
+                        <option value="Poland" flag="pl" symbol="&#122;&#322;">PLN</option>
+                        <option value="Portugal" flag="pt" symbol="&#8364;">EUR</option>
+                        <option value="Qatar" flag="qa" symbol="&#81;&#82;">QAR</option>
+                        <option value="Russia" flag="ru" symbol="&#8381;">RUB</option>
+                        <option value="Saudi Arabia" flag="sa" symbol="&#83;&#82;">SAR</option>
+                        <option value="Singapore" flag="sg" symbol="&#83;&#36;">SGD</option>
+                        <option value="South Africa" flag="za" symbol="&#82;">ZAR</option>
+                        <option value="South Korea" flag="kr" symbol="&#8361">KRW</option>
+                        <option value="Spain" flag="es" symbol="&#8364">EUR</option>
+                        <option value="Sri Lanka" flag="lk" symbol="&#8360">LKR</option>
+                        <!-- two symbol code is separated by semi-colon -->
+                        <option value="Sweden" flag="se" symbol="&#107;&#114;">SEK</option>
+                        <option value="Switzerland" flag="ch" symbol="&#67;&#72;">CHF</option>
+                        <option value="Syria" flag="sy" symbol="&#163;&#83;">SYP</option>
+                        <option value="Taiwan" flag="tw" symbol="&#84;&#36;">TWD</option>
+                        <option value="Tajikistan" flag="tj" symbol="&#83;&#77;">TJS</option>
+                        <option value="Thailand" flag="th" symbol="&#3647;">THB</option>
+                        <option value="Turkmenistan" flag="tm" symbol="&#84;">TMT</option>
+                        <option value="Turkey" flag="tr" symbol="&#8378;">TRY</option>
+                        <option value="Uganda" flag="ug" symbol="&#85;">UGX</option>
+                        <option value="Ukraine" flag="ua" symbol="&#8372;">UAH</option>
+                        <option value="United Arab Emirates" flag="ae" symbol="&#68;">AED</option>
+                        <option value="United Kingdom" flag="gb" symbol="&#163;">GBP</option>
+                        <option value="Uzbekistan" flag="uz" symbol="&#85">UZS</option>
+                        <!-- <option value="Vietnam" flag="vn" symbol="&#8363;">VND</option> -->
+                        <option value="Yemen" flag="ye" symbol="&#65020;">YER</option>
+                        <option value="Zimbabwe" flag="zw" symbol="&#90;&#36;">ZWL</option>
+                        
+                        
+                    </datalist>
+                 </form>
+                 <div class="flag1" id="flag1">
+                    <!-- <img src="https://flagicons.lipis.dev/flags/4x3/in.svg" alt="india"> -->
+                 </div>
+            </div>
+
+            <div id="graph-box">
+                <div id="graph1">
+                    <div id="graph1-display"></div>
+                </div>
+                <div id="small-display">
+                    <div id="currency-update">
+                        <!-- I USD = 87.3333 INR -->
+
+                    </div>
+                    <button id="refresh">
+                        &#8634
+                        <!-- &#128640 -->
+                    </button>
+                </div>
+                <div id="graph2">
+                    <div id="graph2-display"></div>
+                </div>
+            </div>
+
+            <div class="country2">
+                <!-- <input type="text" placeholder="select country"> -->
+                <form action="">
+                    <label for="country2-option">Select Country:</label><br>
+                    <input type="search" list="input2" name="input2" id="country2-option" class="input">
+                    <datalist id="input2">
+
+                        <option value="Afghanistan" flag="af" symbol="&#1547;">AFN</option>
+                        <option value="America" flag="us" symbol="&#36">USD</option>
+                        <option value="Argentina" flag="ar" symbol="&#8369;">ARS</option>
+                        <option value="Armenia" flag="am" symbol="&#1423;">AMD</option>
+                        <option value="Australia" flag="au" symbol="&#65;&#36;">AUD</option>
+                        <option value="Azerbaijan" flag="az" symbol="&#8380;">AZN</option>
+                        <option value="Bangladesh" flag="bd" symbol="&#2547">BDT</option>
+                        <option value="Barbados" flag="bb" symbol="&#36;">BBD</option>
+                        <option value="Belarus" flag="by" symbol="&#66;&#114;">BYN</option>
+                        <option value="Bhutan" flag="bt" symbol="&#78;&#117;">BTN</option>
+                        <option value="Brazil" flag="br" symbol="&#82;&#36;">BRL</option>
+                        <option value="Canada" flag="ca" symbol="&#67;&#36;">CAD</option>
+                        <option value="China" flag="cn" symbol="&#165">CNY</option>
+                        <option value="Denmark" flag="dk" symbol="&#107;&#114;">DKK</option>
+                        <option value="Egypt" flag="eg" symbol="&#163;">EGP</option>
+                        <option value="England" flag="gb-eng" symbol="&#163;">GBP</option>
+                        <option value="Europe" flag="eu" symbol="&#8364;">EUR</option>
+                        <option value="Fiji" flag="fj" symbol="&#36;">FJD</option>
+                        <option value="France" flag="fr" symbol="&#8364;">EUR</option>
+                        <option value="Germany" flag="de" symbol="&#8364;">EUR</option>
+                        <option value="Hong Kong" flag="hk" symbol="&#72;&#36;">HKD</option>
+                        <option value="Hungary" flag="hu" symbol="&#70;&#116;">HUF</option>
+                        <option value="Iceland" flag="is" symbol="&#107;&#114;">ISK</option>
+                        <option value="India" flag="in" symbol="&#8377">INR</option>
+                        <option value="Indonesia" flag="id" symbol="&#82;&#112;">IDR</option>
+                        <option value="Iran" flag="ir" symbol="&#65020;">IRR</option>
+                        <option value="Iraq" flag="iq" symbol="&#68;">IQD</option>
+                        <option value="Ireland" flag="ie" symbol="&#8364;">EUR</option>
+                        <option value="Israel" flag="il" symbol="&#8362">ILS</option>
+                        <option value="Italy" flag="it" symbol="&#8356;">EUR</option>
+                        <option value="Jamaica" flag="jm" symbol="&#74;&#36;">JMD</option>
+                        <option value="Japan" flag="jp" symbol="&#165">JPY</option>
+                        <option value="Jordan" flag="jo" symbol="&#74;&#68;">JOD</option>
+                        <option value="Kazakhstan" flag="kz" symbol="&#8376;">KZT</option>
+                        <option value="Kenya" flag="ke" symbol="&#83;&#104;">KES</option>
+                        <option value="Kuwait" flag="kw" symbol="&#107;&#68;">KWD</option>
+                        <option value="Kyrgyzstan" flag="kg" symbol="&#75;">KGS</option>
+                        <option value="Madagascar" flag="mg" symbol="&#65;&#114;">MGA</option>
+                        <option value="Malaysia" flag="my" symbol="&#82;&#77;">MYR</option>
+                        <option value="Maldives" flag="mv" symbol="&#1923;&#46;">MVR</option>
+                        <option value="Mauritius" flag="mu" symbol="&#8360;">MUR</option>
+                        <option value="Mexico" flag="mx" symbol="&#36;">MXN</option>
+                        <option value="Myanmar" flag="mm" symbol="&#75;">MMK</option>
+                        <option value="Nepal" flag="np" symbol="&#2352;&#2370;">NPR</option>
+                        <option value="Netherlands" flag="nl" symbol="&#8364;">EUR</option>
+                        <option value="New Zealand" flag="nz" symbol="&#78;&#36;">NZD</option>
+                        <option value="Nigeria" flag="ng" symbol="&#8358;">NGN</option>
+                        <option value="North Korea" flag="kp" symbol="&#8361;">KPW</option>
+                        <option value="Norway" flag="no" symbol="&#107;&#114;">NOK</option>
+                        <option value="Oman" flag="om" symbol="&#1054;&#82;">OMR</option>
+                        <option value="Pakistan" flag="pk" symbol="&#8360">PKR</option>
+                        <option value="Papua New Guinea" flag="pg" symbol="&#x4B;">PGK</option>
+                        <option value="Poland" flag="pl" symbol="&#122;&#322;">PLN</option>
+                        <option value="Portugal" flag="pt" symbol="&#8364;">EUR</option>
+                        <option value="Qatar" flag="qa" symbol="&#81;&#82;">QAR</option>
+                        <option value="Russia" flag="ru" symbol="&#8381;">RUB</option>
+                        <option value="Saudi Arabia" flag="sa" symbol="&#83;&#82;">SAR</option>
+                        <option value="Singapore" flag="sg" symbol="&#83;&#36;">SGD</option>
+                        <option value="South Africa" flag="za" symbol="&#82;">ZAR</option>
+                        <option value="South Korea" flag="kr" symbol="&#8361">KRW</option>
+                        <option value="Spain" flag="es" symbol="&#8364">EUR</option>
+                        <option value="Sri Lanka" flag="lk" symbol="&#8360">LKR</option>
+                        <!-- two symbol code is separated by semi-colon -->
+                        <option value="Sweden" flag="se" symbol="&#107;&#114;">SEK</option>
+                        <option value="Switzerland" flag="ch" symbol="&#67;&#72;">CHF</option>
+                        <option value="Syria" flag="sy" symbol="&#163;&#83;">SYP</option>
+                        <option value="Taiwan" flag="tw" symbol="&#84;&#36;">TWD</option>
+                        <option value="Tajikistan" flag="tj" symbol="&#83;&#77;">TJS</option>
+                        <option value="Thailand" flag="th" symbol="&#3647;">THB</option>
+                        <option value="Turkmenistan" flag="tm" symbol="&#84;">TMT</option>
+                        <option value="Turkey" flag="tr" symbol="&#8378;">TRY</option>
+                        <option value="Uganda" flag="ug" symbol="&#85;">UGX</option>
+                        <option value="Ukraine" flag="ua" symbol="&#8372;">UAH</option>
+                        <option value="United Arab Emirates" flag="ae" symbol="&#68;">AED</option>
+                        <option value="United Kingdom" flag="gb" symbol="&#163;">GBP</option>
+                        <option value="Uzbekistan" flag="uz" symbol="&#85">UZS</option>
+                        <!-- <option value="Vietnam" flag="vn" symbol="&#8363;">VND</option> -->
+                        <option value="Yemen" flag="ye" symbol="&#65020;">YER</option>
+                        <option value="Zimbabwe" flag="zw" symbol="&#90;&#36;">ZWL</option>
+
+                    </datalist>
+                 </form>
+                 <div class="flag2" id="flag2">
+                    <!-- <img src="https://flagicons.lipis.dev/flags/4x3/us.svg" alt="usa"> -->
+                 </div>
+            </div>
+        </div>
+
+        <div class="currency-data">
+            <div class="country1-currency">
+                <label for="currency-value1">Enter Value:</label>
+                <input type="text" class="currency-input1" id="currency-value1" name="currency-box" box="box1">
+                <div class="currency-symbol1" id="symbol1">
+                   <!-- &#8377 -->
+                </div>
+            </div>
+
+            <div class="arrow-symbol">
+                &#8644    
+            </div>
+
+            <div class="country2-currency">
+                <label for="currency-value2">Enter Value:</label>
+                <input type="text" class="currency-input2" id="currency-value2" name="currency-box" box="box2">
+                <div class="currency-symbol2" id="symbol2">
+                    <!-- &#36 -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        <footer class="footer"></footer>
+
+    </div>
+    
+
+</body>
+<script src="D:\HTML_Learn\JavaScript_Learn\Chapter-13 Currency Converter Application\currency converter API.js"></script>
+</html>

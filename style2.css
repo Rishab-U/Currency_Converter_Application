@@ -1,0 +1,80 @@
+body{
+    background-color: #CBE2B5;
+}
+
+.sub-container{
+    box-sizing: border-box;
+    /* border: 1px solid rgb(202, 43, 43); */
+    background-color:#E7FBE6;
+    
+}
+
+#currency-update:hover{
+    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw;
+}
+
+
+
+#refresh:hover{
+        
+        /* background-color: #CCD5AE; */
+        box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw;
+        text-shadow: 0.1vw 0.1vw ;
+        /* rotate: 30deg; */
+        /* animation: spin 2s linear; */
+}
+
+.spin-refresh{
+    text-shadow: 0.1vw 0.1vw ;
+    animation: spin 2s linear;
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .footer:hover{
+    font-size: 1.5vw;
+  }
+
+  .footer{
+    animation: real-time 15s linear infinite;
+  }
+
+  @keyframes real-time{
+    0% {left: 0vw;}
+    10% {left: 10vw;}
+    25% {left: 20vw;}
+    40% {left: 30vw;}
+    55% {left: 40vw;}
+    70% {left: 50vw;}
+    85% {left: 60vw;}
+    100% {left: 70vw;}
+  }
+
+  #graph1-display:hover{
+    box-shadow: 0.2vw 0.2vw 0.2vw 0.2vw;
+  }
+
+
+  #graph2-display:hover{
+    box-shadow: 0.2vw 0.2vw 0.2vw 0.2vw;
+  }
+
+
+  .arrow-symbol:hover{
+    font-weight: bolder;
+  }
+
+  .currency-symbol1:hover{
+    font-weight: bolder;
+  }
+
+  .currency-symbol2:hover{
+    font-weight: bolder;
+  }
+  
+
+
