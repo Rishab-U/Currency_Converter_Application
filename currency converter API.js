@@ -1,4 +1,3 @@
-
 // resource url to get real time currency value w.r.t 1 USD
 const base_url = 'https://api.fxratesapi.com/latest';
 
